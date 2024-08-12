@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+input[type="radio"] {
+    margin-top: -1px;
+    vertical-align: middle;
+}
+
+.signup-page {
+    width: 670px;
+    height: 960px;
+    border: 1px solid #aacdff;
+    border-radius: 20px;
+    box-shadow: 7px 7px 39px 0px #0068ff;
+    margin: 60px 0px;
+    padding: 72px 100px 70px; 
+}
+.signup-page h1 {
+    font-family: Noto Sans CJK KR;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 47.36px;
+    text-align: left;
+    color: #0068FF;
+    margin-bottom: 60px;
+}
+
+.input_container {
+    width: 466px;
+    height: 80px;
+    margin-bottom: 21px;
+}
+.input_container label {
+    display: block;
+    width: 158px;
+    height: 23.65px;
+    font-family: Noto Sans CJK KR;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.68px;
+    color: #797979;
+}
+.input_container input {
+    display: block;
+    width: 100%;
+    height: calc(80px - 23.65px);
+    border: 0px;
+    border-bottom: 1px solid #CFCFCF;
+}
+.input_container.last {
+    margin-bottom: 50px;
+}
+.input_container input:focus {
+    outline: none;
+    border-bottom: 1px solid #0068FF;
+}
+
+.radio_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.radio_container div {
+    height: 23.94px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.radio_container input {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.radio_container label {
+    display: block;
+    font-family: Noto Sans CJK KR;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 0;
+}
+.radio_container label:nth-of-type(1) {
+    margin-right: 30px;
+}
+
+.check_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 21px;
+    margin-bottom: 30px;
+}
+.check_container input {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+.check_container label {
+    font-family: Noto Sans CJK KR;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20.72px;
+    text-align: left;
+}
+
+.line {
+    border: 1px solid #e6e6e6;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.signup-page__signup-btn {
+    width: 100%;
+    height: 75px;
+    border: 1px solid #0068FF;
+    border-radius: 10px;
+    font-family: Noto Sans CJK KR;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    background-color: #fff;
+    color: #0068FF;
+}

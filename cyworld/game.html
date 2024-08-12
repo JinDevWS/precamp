@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Game</title>
+    <link rel="stylesheet" href="./styles/game.css">
+    <script src="./javascripts/game.js"></script>
+</head>
+<body>
+    <div class="wrapper__game">
+        <div class="wrapper__header">
+            <div class="contents__title">
+                <div class="title">GAME</div>
+                <div class="subtitle">TODAY Choice</div>
+            </div>
+        </div>
+        <div class="line__game"></div>
+        <div class="game__wrapper">
+            <div class="game__box">
+                <img src="./images/wordgame.png" alt="기차" class="wordimg">
+                <div class="gametitle">끝말잇기</div>
+                <div class="gameinfo">
+                    제시어: <span id="targetWord">뉴비즈코드</span>
+                </div>
+                <div class="btnbox">
+                    <input type="text" placeholder="단어를 입력하세요." id="text">
+                    <button id="search" onclick="search()">검색</button>
+                </div>
+                <div class="result">
+                    결과! <span id="result"></span>
+                </div>
+            </div>
+            <div class="game__box">
+                <img src="./images/lottogame.png" alt="로또" class="lottoimg">
+                <div class="gametitle">LOTTO</div>
+                <div class="gameinfo">버튼을 누르세요.</div>
+                <div class="randbox">
+                    <span id="num1">1</span>
+                    <span id="num2">2</span>
+                    <span id="num3">3</span>
+                    <span id="num4">4</span>
+                    <span id="num5">5</span>
+                    <span id="num6">6</span>
+                </div>
+                <div class="btnbox">
+                    <button id="lottoBtn" class="btn" onclick="lotto()">Button</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

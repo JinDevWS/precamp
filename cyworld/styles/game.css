@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper__game {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper__header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contents__title {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.title {
+    color: #55b2e4;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 8px;
+    padding-left: 5px;
+}
+
+.line__game {
+    width: 100%;
+    border-top: 1px solid gray;
+    margin: 10px 0px 20px 0px;
+
+}
+
+.game__body {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+
+.game__wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game__box {
+    width: 222px;
+    height: 168px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f6f6f6;
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: Malgun Gothic;
+    font-size: 11px;
+    font-weight: 700;
+    color: #999;
+}
+
+.gametitle {
+    font-family: Malgun Gothic;
+    font-size: 11px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.gameinfo {
+    margin-bottom: 11px;
+}
+
+.btnbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.wordimg {
+    width: 40px;
+    height: 20px;
+    margin-bottom: 8px;
+}
+
+.btnbox input {
+    width: 136px;
+    height: 24px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    margin-right: 8px;
+    padding-left: 8px;
+    font-family: Malgun Gothic;
+    font-size: 11px;
+    font-weight: 700;
+    color: #999;
+}
+
+.btnbox button {
+    width: 38px;
+    height: 24px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background-color: #fff;
+    font-family: Malgun Gothic;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.result {
+    margin-top: 11px;
+}
+
+.lottoimg {
+    width: 26px;
+    height: 28px;
+}
+
+.randbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: yellow;
+    width: 130px;
+    height: 21px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    padding: 8px;
+    font-family: Malgun Gothic;
+    font-size: 10px;
+    font-weight: 700;
+    color: #000;
+}
+
+.btnbox .btn {
+    width: 62px; 
+    margin-top: 11px;   
+}
