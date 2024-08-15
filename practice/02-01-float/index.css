@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.float_box {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    color: #fff;
+    padding: 30px;
+    float: right;
+    /* float: left; */
+}
+
+p {
+    font-size: 20px;
+    clear: right;
+}
+
