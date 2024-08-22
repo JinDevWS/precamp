@@ -1,53 +1,55 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
+  <head>
     <script>
-        (function() {
-            let MYAPP = {}; //전역변수 사용 최소화를 위한 전역변수 객체
-            
-            MYAPP.targetYearInput = document.querySelector('#targetYearInput');
-            MYAPP.targetMonthInput = document.querySelector('#targetMonthInput');
-            MYAPP.targetDayInput = document.querySelector('#targetDayInput');
+      (function () {
+        let MYAPP = {}; //전역변수 사용 최소화를 위한 전역변수 객체
 
-            MYAPP.output = document.querySelector("#output");
-            MYAPP.timer = document.querySelector("#timer");
+        MYAPP.targetYearInput = document.querySelector("#targetYearInput");
+        MYAPP.targetMonthInput = document.querySelector("#targetMonthInput");
+        MYAPP.targetDayInput = document.querySelector("#targetDayInput");
 
-            MYAPP.timerID = '';
-        }()); //전역변수 사용 억제를 위한 즉시 실행 함수
+        MYAPP.output = document.querySelector("#output");
+        MYAPP.timer = document.querySelector("#timer");
 
-        const dateFormMaker = function() {
-            output.innerHTML = `${targetYearInput.value}년 ${targetMonthInput.value}월 ${targetDayInput.value}일`; 
-        };
+        MYAPP.timerID = "";
+      })(); //전역변수 사용 억제를 위한 즉시 실행 함수
 
-        const counterMaker = function() {
-            timerID = setInterval(()=>{
-                const targetDate = new Date(`${targetYearInput.value}-${targetMonthInput.value}-${targetDayInput.value}`);
-                const now = new Date();
-                const countDate = targetDate - now;
-                
-                const secs = Math.floor((countDate / 1000) % 60); //초
-                const mins = Math.floor((countDate / (1000 * 60) % 60)); //분
-                const hours = Math.floor((countDate / (1000 * 60 * 60)) % 24); //시
-                const days = Math.floor(countDate / (1000 * 60 * 60 * 24)); //일
+      const dateFormMaker = function () {
+        output.innerHTML = `${targetYearInput.value}년 ${targetMonthInput.value}월 ${targetDayInput.value}일`;
+      };
 
-                timer.innerHTML = `${days}일 ${hours}시간 ${mins}분 ${secs}초 남았습니다.`;
-            }, 1000);
-            console.log("timerID : " + timerID);
-        };
+      const counterMaker = function () {
+        timerID = setInterval(() => {
+          const targetDate = new Date(
+            `${targetYearInput.value}-${targetMonthInput.value}-${targetDayInput.value}`
+          );
+          const now = new Date();
+          const countDate = targetDate - now;
 
-        const clearTimer = function() {
-            clearInterval(timerID);
-            
-            targetYearInput.value = null;
-            targetMonthInput.value = null;
-            targetDayInput.value = null;
-            output.innerHTML = '';
-            timer.innerHTML = '';
-        }
+          const secs = Math.floor((countDate / 1000) % 60); //초
+          const mins = Math.floor((countDate / (1000 * 60)) % 60); //분
+          const hours = Math.floor((countDate / (1000 * 60 * 60)) % 24); //시
+          const days = Math.floor(countDate / (1000 * 60 * 60 * 24)); //일
+
+          timer.innerHTML = `${days}일 ${hours}시간 ${mins}분 ${secs}초 남았습니다.`;
+        }, 1000);
+        console.log("timerID : " + timerID);
+      };
+
+      const clearTimer = function () {
+        clearInterval(timerID);
+
+        targetYearInput.value = null;
+        targetMonthInput.value = null;
+        targetDayInput.value = null;
+        output.innerHTML = "";
+        timer.innerHTML = "";
+      };
     </script>
     <title>D-Day Counter</title>
-</head>
-<body>
+  </head>
+  <body>
     <input type="number" id="targetYearInput" />
     <input type="number" id="targetMonthInput" />
     <input type="number" id="targetDayInput" />
@@ -56,5 +58,5 @@
     <button onclick="counterMaker()">시작</button>
     <div id="timer"></div>
     <button onclick="clearTimer()">초기화</button>
-</body>
+  </body>
 </html>
