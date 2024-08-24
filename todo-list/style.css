@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline: 0px;
+}
+
+input:checked + label {
+  text-decoration: line-through;
+  color: #999;
+}
