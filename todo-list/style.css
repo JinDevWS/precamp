@@ -51,6 +51,8 @@ ul {
 li {
   display: flex;
   align-items: center;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 10px;
   margin-bottom: 10px;
 }
 
@@ -61,7 +63,9 @@ input[type="checkbox"] {
 }
 
 label {
+  width: calc(100% - 28px - 20px);
   font: 18px sans-serif;
+  overflow-wrap: break-word;
 }
 
 input:checked + label {
