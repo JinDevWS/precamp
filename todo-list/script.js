@@ -141,3 +141,10 @@ allDelBtn.addEventListener("click", () => {
   clearList();
   clearStorage();
 });
+
+const askForLocation = function () {
+  navigator.geolocation.getCurrentPosition((position) => {
+    console.log(position);
+  });
+};
+askForLocation();
