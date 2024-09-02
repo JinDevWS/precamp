@@ -10,7 +10,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   padding: 50px;
-  background-color: aquamarine;
+  background-size: cover;
 }
 
 h1 {
